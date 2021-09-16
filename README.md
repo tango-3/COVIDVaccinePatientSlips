@@ -2,6 +2,7 @@
 
 A free tool that allows you to convert a CSV list of patients into a printable pack of patient slips to make using Pinnacle a breeze.
 
+![Latest Release](https://img.shields.io/github/release/tango-3/COVIDVaccinePatientSlips)
 <p align="center">
  Single QR Code:<br>
 <a href="https://github.com/tango-3/COVIDVaccinePatientSlips/releases"><img src="https://github.com/tango-3/COVIDVaccinePatientSlips/blob/ec479a73d3edcb8f449b9caae20610f5ed4949e6/img/downloadlatest.png?raw=true"></a>
@@ -14,9 +15,12 @@ A free tool that allows you to convert a CSV list of patients into a printable p
 
 Looking up patients in Outcomes4Health takes so long many vaccine sites are pre-registering patients (which takes hours). Part of the issue is transcribing NHS number and DOB (in the very specific format it demands). This takes your list of patients for a vaccine session and for each patient generates a slip with a QR code for their DOB and NHS Number so they can be entered into Outcomes4Health rapidly using barcode scanners that vaccine sites have available.
 
+
+## Q&A
+We have create a [discussion area](https://github.com/tango-3/COVIDVaccinePatientSlips/discussions) for Q&A, please feel free to post questions and we will try to respond in a timely manner.
 ## New Features
 
-The project is constantly evolving to the needs of vaccine clinics. If you want to try and test the latest features, checkout the [development version](https://github.com//tango-3/COVIDVaccinePatientSlips/tree/dev).
+The project is constantly evolving to the needs of vaccine clinics, bugs can be logged and new features can be requested and track on [here](https://github.com/tango-3/COVIDVaccinePatientSlips/issues). If you want to try and test the latest features, checkout the [development version](https://github.com//tango-3/COVIDVaccinePatientSlips/tree/dev).
 
 ## Video Demo
 
@@ -38,3 +42,8 @@ There is a dummy patient csv file included in the ZIP file to test the system be
 ## IG and Security
 
 No data is transferred anywhere when using this tool, all the process is done in your web browser. The tool uses some open source libraries to work. Using the tool is entirely at your own risk.
+
+## Contributing
+This is such a useful tool, we felt it needed to continue to be maintained. At Tango3 we will do our best to update it to meet the evolving needs of the vaccination programmes.  If you are able to help out, that would be awesome.
+## Credits
+This fork is being maintained by [Tango3 Ltd](https://tango3.co.uk). The project was developed originally by [Mike Smith](https://github.com/DrMikeyS), but has been contributed to by others, including: [Richard1793](https://github.com/Richard1793), [bunit17](https://github.com/bunit17) and [tfechtner](https://github.com/tfechtner)
