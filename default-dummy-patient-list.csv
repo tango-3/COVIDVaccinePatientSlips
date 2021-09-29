@@ -21,3 +21,6 @@ NhsNumber,Name,DateOfBirth,SessionDate,StartTime,RegisteredPracticeName,Address,
 349888464,Test Patient,29/08/1948,20/01/2021,11:40,Test General Medical Practice,"142 Test Street, Bedford, BD12 3AD",Second
 835258980,Test Patient,30/01/1924,20/01/2021,11:50,Test General Medical Practice,"143 Test Street, Bedford, BD12 3AD",Second
 451757567,Test Patient,31/10/1942,20/01/2021,12:00,Test General Medical Practice,"144 Test Street, Bedford, BD12 3AD",Second
+2418409899,Test Patient Booster,15/06/1972,20/01/2021,09:00,Test General Medical Practice,"144 Test Street, Bedford, BD12 3AD",Booster
+5001523761,Test Patient Booster,03/11/1962,20/01/2021,10:00,Test General Medical Practice,"144 Test Street, Bedford, BD12 3AD",Booster
+9391287379,Test Patient Booster,23/02/1932,20/01/2021,10:30,Test General Medical Practice,"144 Test Street, Bedford, BD12 3AD",Booster

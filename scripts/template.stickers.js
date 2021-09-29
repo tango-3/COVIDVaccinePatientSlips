@@ -37,6 +37,9 @@ function genPatientStickersHTML() {
         } else if (csvVaccineDose == "Second") {
             //Second dose only
             doseHTML = generateSecondDoseHTML(sessiondate, sessiontime, batchNumber);
+        } else if (csvVaccineDose == "Booster") {
+            //Second dose only
+            doseHTML = generateBoosterDoseHTML(sessiondate, sessiontime, batchNumber);
         } else {
             //No vaccine dose in CSV file, revert to unspecified
             doseHTML = generateUnspecifiedDoseHTML(sessiondate, sessiontime, batchNumber);
@@ -100,6 +103,25 @@ function generateSecondDoseHTML(sessiondate, sessiontime, batchNumber) {
         batchHTML + '</tr>';
 
     return tableheadHTML + secondDoseHTML + tablefootHTML + batchOnRecordHTML;
+}
+
+function generateBoosterDoseHTML(sessiondate, sessiontime, batchNumber) {
+    tableheadHTML = `<table class="dose-details">
+    <tr><td colspan="2"><i>Dose Details</i></td></tr> `;
+    tablefootHTML = `</table>`;
+
+    if (batchNumber) {
+        batchHTML = `<td>Batch: ` + batchNumber + `</td>`;
+        batchOnRecordHTML = '';
+    } else {
+        batchOnRecordHTML = `<small class="batchOnRecord text-center">The batch details are stored in your medical record.</small>`;
+        batchHTML = '';
+    }
+
+    boosterDoseHTML = `<tr><td><strong>Booster</strong>:` + sessiondate + ` ` + sessiontime + `</td>` +
+        batchHTML + '</tr>';
+
+    return tableheadHTML + boosterDoseHTML + tablefootHTML + batchOnRecordHTML;
 }
 
 function generateUnspecifiedDoseHTML(sessiondate, sessiontime, batchNumber) {

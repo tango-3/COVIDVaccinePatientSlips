@@ -35,7 +35,7 @@ function genFullPageHTML(patient, index) {
         ageHTML = ' (Under 18)'
     }
     firstdoseHTML = ``;
-    doseHTML = ` First    |    Second`;
+    doseHTML = ` First    |    Second    |     Booster`;
 
 
 
