@@ -2,7 +2,7 @@
 
 A free tool that allows you to convert a CSV list of patients into a printable pack of patient slips to make using Pinnacle a breeze.
 
-![Latest Release](https://img.shields.io/github/release/tango-3/COVIDVaccinePatientSlips)
+![Latest Release](https://img.shields.io/github/release/tango-3/COVIDVaccinePatientSlips) [![CodeQL](https://github.com/tango-3/COVIDVaccinePatientSlips/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/tango-3/COVIDVaccinePatientSlips/actions/workflows/codeql-analysis.yml)
 <p align="center">
  Single QR Code:<br>
 <a href="https://github.com/tango-3/COVIDVaccinePatientSlips/releases"><img src="https://github.com/tango-3/COVIDVaccinePatientSlips/blob/ec479a73d3edcb8f449b9caae20610f5ed4949e6/img/downloadlatest.png?raw=true"></a>
