@@ -67,56 +67,88 @@ function genFullPageHTML(patient, index) {
     </tr>
 </table>
 
+<table class="table table-bordered">
+    <tr>
+        <th>Demographics</th>
+    </tr>
+    <tr>
+        <td>Ethnicity:</td>
+    </tr>
+    <tr>
+    <td>Is the patient a carer, social worker, healthcare worker or do they live in a residential or care home?</td>
+    </tr>
+</table>
 
 <table class="table table-bordered">
     <tr>
-        <th>Screening Questions</th>
+        <th>Screening Questions - Updated: 30 September 2021 - Please check this reflects current questions</th>
         <th>Yes</th>
         <th>No</th>
     </tr>
     <tr>
-        <td>1. Are you currently unwell with fever, symptoms of COVID-19 or a positive test in the last 28 days?</td>
+        <td>1. Has the individual experienced major venous and/or arterial thrombosis occurring with thrombocytopenia following vaccination with any COVID-19 vaccine?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>2. Have you ever had any serious allergic reaction or do you carry an EpiPen?</td>
+        <td>2. Has the individual had any vaccination in the last 7 days?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>3. Have you already had a COVID vaccine (or are you in a trial)?</td>
+        <td>3. Is the individual currently unwell with fever?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>4. Are you, or could you be pregnant, breastfeeding or planning to become pregnant in the next three months?</td>
+        <td>4. Has the individual ever had any serious allergic reaction to any ingredients of the Covid-19 vaccines, drug or other vaccine?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>5. Are you taking anticoagulant medication, or do you have a bleeding disorder?</td>
+        <td>5. Has the individual ever had an unexplained anaphylaxis reaction?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>6. Have you had any vaccinations in the last seven days?</td>
+        <td>6. Does the individual have a history of heparin-induced thrombocytopenia and thrombosis (HITT or HIT type 2)?</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-    <td>7. Ethnicity and is patient a social or health worker or a care home resident?</td>
+    <td>7. Does the individual have a history of capillary leak syndrome?</td>
+    <td></td>
+    <td></td>
+</tr>
+<td>8. Has the individual indicated they are, or could be pregnant?</td>
+    <td></td>
+    <td></td>
+</tr>
+<td>9. Has the individual informed you they are currently or have been in a trial of a potential coronavirus vaccine?</td>
+    <td></td>
+    <td></td>
+</tr>
+<td>10. Is the individual taking anticoagulant medication, or do they have a bleeding disorder?</td>
+    <td></td>
+    <td></td>
+</tr>
+<td>11. Does the individual currently have any symptoms of Covid-19 infection?</td>
     <td></td>
     <td></td>
 </tr>
     </table>
-
+    <div class="page-break-clear"></div><div class="page-break">&nbsp;</div>
 <table class="table table-bordered">
     <tr>
         <td>Screening Questions Completed by:</td>
         <td>Vaccinator (who is registered HCP) | Other HCP (please add name, signature and date below)</td>
-        </tr><tr>
+        </tr>
+    <tr>
         <td colspan="2"><p></p></td>
+    </tr>
+    <tr>
+        <td>Protocol under which the vaccination is given:</td>
+        <td>National | PSD | PGD</td>
     </tr>
 </table>
     <table class="table table-bordered">
@@ -175,5 +207,6 @@ function genFullPageHTML(patient, index) {
         </tr>
     </table>
     </div>
-    <div class="page-break-clear"></div><div class="page-break">&nbsp;</div>`;
+    <div class="page-break-clear"></div><div class="page-break">&nbsp;</div>
+    `;
 }
