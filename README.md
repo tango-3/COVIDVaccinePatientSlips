@@ -20,7 +20,7 @@ Looking up patients in Outcomes4Health takes so long many vaccine sites are pre-
 We have create a [discussion area](https://github.com/tango-3/COVIDVaccinePatientSlips/discussions) for Q&A, please feel free to post questions and we will try to respond in a timely manner.
 ## New Features
 
-The project is constantly evolving to the needs of vaccine clinics, bugs can be logged and new features can be requested and track on [here](https://github.com/tango-3/COVIDVaccinePatientSlips/issues). If you want to try and test the latest features, checkout the [development version](https://github.com//tango-3/COVIDVaccinePatientSlips/tree/dev).
+The project is constantly evolving to the needs of vaccine clinics, bugs can be logged and new features can be requested and track on [here](https://github.com/tango-3/COVIDVaccinePatientSlips/issues).
 
 ## Video Demo
 
