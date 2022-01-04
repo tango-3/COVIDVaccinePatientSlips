@@ -131,7 +131,7 @@ function generateUnspecifiedDoseHTML(sessiondate, sessiontime, batchNumber) {
                 <td>Batch: ` + batchNumber + `</td>
             </tr>
             <tr class="text-center">
-                <td colspan="2">First Dose | Second Dose<br>
+                <td colspan="2">First Dose | Second Dose | Booster<br>
                 <small>Circle as applicable</small></td>
             </tr>`;
 }
