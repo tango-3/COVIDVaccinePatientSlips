@@ -103,6 +103,7 @@ function getAge(dateString) {
 //Sort list of patients alphabetically
 function sortAlphabetical(objArray) {
     function compare(a, b) {
+        // TODO(Isaac): this doesn't handle NSB's format with split name fields
         if (a.Name.toLowerCase() < b.Name.toLowerCase()) {
             return -1;
         }
@@ -120,6 +121,7 @@ function sortAlphabetical(objArray) {
 function identifyCSVKeys(CSVArray) {
     var keys = Object.keys(CSVArray[0]);
     var nhsno_key, dob_key, name_key, address_key, firstdose_type, firstdose_batch, firstdose_date;
+    var first_name_key, last_name_key, appointment_start_key;
     keys.forEach(function (key) {
         lkey = key.toLowerCase();
         if (lkey.includes('nhs')) {
@@ -144,10 +146,22 @@ function identifyCSVKeys(CSVArray) {
             if (lkey.includes('organization')) {} else
             if (lkey.includes('practice')) {} else
             if (lkey.includes('first')) {} else
+            if (lkey.includes('last')) {} else
             if (lkey.includes('sur')) {} else
+            // NOTE(Isaac): National Booking Service uses a key of AppointmentTypeName for vaccine dose. Ignore that.
+            if (lkey.includes('type')) {} else
             if (lkey.includes('pcn')) {} else {
                 name_key = key;
             }
+        }
+        if (lkey.includes('firstname')) {
+            first_name_key = key;
+        }
+        if (lkey.includes('lastname')) {
+            last_name_key = key;
+        }
+        if (lkey.includes('appointment start')) {
+            appointment_start_key = key;
         }
         if (lkey.includes('first')) {
             if (lkey.includes('date')) {
@@ -160,7 +174,6 @@ function identifyCSVKeys(CSVArray) {
                 firstdose_batch = key;
             }
         }
-
     });
 
 
@@ -169,6 +182,9 @@ function identifyCSVKeys(CSVArray) {
         name: name_key,
         nhsno: nhsno_key,
         address: address_key,
+        first_name: first_name_key,
+        last_name: last_name_key,
+        appointment_start: appointment_start_key,
         firstdose_batch: firstdose_batch,
         firstdose_date: firstdose_date,
         firstdose_type: firstdose_type
