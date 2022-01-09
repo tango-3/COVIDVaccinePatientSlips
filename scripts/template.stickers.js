@@ -50,19 +50,14 @@ function genPatientStickersHTML() {
             csvVaccineDose = patient.AppointmentTypeName;
         }
 
-        // TODO(Isaac): a helper function to match these nicely would be better
-        // TODO(Isaac): what does the National Booking Service give us for a Moderna or AZ dose?
-        if (csvVaccineDose == "First" || csvVaccineDose == "Pfizer-BioNTech General Dose 1") {
-            //First Dose
+        var dose = getDose(csvVaccineDose);
+        if (dose == "First") {
             doseHTML = generateFirstDoseHTML(date, time, batchNumber);
-        } else if (csvVaccineDose == "Second" || csvVaccineDose == "Pfizer-BioNTech General Dose 2") {
-            //Second dose only
+        } else if (dose == "Second") {
             doseHTML = generateSecondDoseHTML(date, time, batchNumber);
-        } else if (csvVaccineDose == "Booster" || csvVaccineDose == "Pfizer-BioNTech Booster") {
-            //Second dose only
+        } else if (dose == "Booster") {
             doseHTML = generateBoosterDoseHTML(date, time, batchNumber);
         } else {
-            //No vaccine dose in CSV file, revert to unspecified
             doseHTML = generateUnspecifiedDoseHTML(date, time, batchNumber);
         }
 

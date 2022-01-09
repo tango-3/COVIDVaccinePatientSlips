@@ -207,6 +207,22 @@ function capitaliseName(str) {
     return str;
 }
 
+/// Parses a variety of dose information exported by various booking systems and returns either "First",
+/// "Second", "Booster", or "Unknown"
+// TODO(Isaac): could we extend this to handle Third Primary doses? The booking systems don't seem to handle them gracefully tho
+function getDose(csvDose) {
+    // TODO(Isaac): what does the National Booking Service give us for a Moderna or AZ dose?
+    if (csvVaccineDose == "First" || csvVaccineDose == "Pfizer-BioNTech General Dose 1") {
+        return "First";
+    } else if (csvVaccineDose == "Second" || csvVaccineDose == "Pfizer-BioNTech General Dose 2") {
+        return "Second";
+    } else if (csvVaccineDose == "Booster" || csvVaccineDose == "Pfizer-BioNTech Booster") {
+        return "Booster";
+    } else {
+        return "Unknown";
+    }
+}
+
 function generateAlert(text, elementToAppendTo, type = 'danger') {
     var alertHTML = `<div class="alert alert-` + type + `" role="alert">
         ` + text + `
