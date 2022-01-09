@@ -57,7 +57,15 @@ function formatDate(dateString) {
 
     var year = splitDate[2];
     if (year.length == 2) {
-        year = '19' + year;
+        // NOTE(Isaac): this is a bit of a messy situation. QFlow exports DOBs
+        // with two-digit years, and so we need to pick a suitable threshold to
+        // decide which century is more likely to be correct. This seems to work
+        // pretty well on what we've seen so far.
+        if ((new Date().getFullYear().toString().substr(-2) - year) >= 0) {
+            year = '20' + year;
+        } else {
+            year = '19' + year;
+        }
     }
     //Convert text month to int
     var regExp = /[a-zA-Z]/g;
