@@ -23,7 +23,7 @@ function genPatientStickersHTML() {
             if (!patient[keys['first_name']] || !patient[keys['last_name']]) {
                 throw new Error('CSV file does not contain patient names, either as single or split fields!');
             }
-            patientName = capitaliseName(patient[keys['first_name']] + ' ' + patient[keys['last_name']]);
+            patientName = capitaliseName(patient[keys['last_name']] + ', ' + patient[keys['first_name']]);
         }
 
         // NOTE(Isaac): this parses the appointment date and time from some of a number of fields, depending on the booking system:
