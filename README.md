@@ -46,4 +46,4 @@ No data is transferred anywhere when using this tool, all the process is done in
 ## Contributing
 This is such a useful tool, we felt it needed to continue to be maintained. At Tango3 we will do our best to update it to meet the evolving needs of the vaccination programmes.  If you are able to help out, that would be awesome.
 ## Credits
-This fork is being maintained by [Tango3 Ltd](https://tango3.co.uk). The project was developed originally by [Mike Smith](https://github.com/DrMikeyS), but has been contributed to by others, including: [Richard1793](https://github.com/Richard1793), [bunit17](https://github.com/bunit17) and [tfechtner](https://github.com/tfechtner)
+This fork is being maintained by [Tango3 Ltd](https://tango3.co.uk). The project was developed originally by [Mike Smith](https://github.com/DrMikeyS), but has been contributed to by others, including: [Richard1793](https://github.com/Richard1793), [bunit17](https://github.com/bunit17), [tfechtner](https://github.com/tfechtner)  and [Isaac Woods](https://github.com/IsaacWoods).
